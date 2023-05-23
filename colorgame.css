@@ -1,0 +1,88 @@
+body{
+  background: #232323;
+  margin: 0;
+  font: "Montserrat"
+}
+
+h1{
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  background: steelblue;
+  margin: 0;
+  padding: 20px 0;
+  font-weight: normal;
+}
+
+#colorDisplay{
+  font-size: 200%
+}
+
+#message{
+  display: inline-block;
+  /* IMPORTANT */
+  width: 40%;
+}
+
+.square{
+  width: 30%;
+  background: purple;
+  /* since these are just divs and are empty without any content nothing is visible
+  so we add padding to add some space this shows the purple as the presence of content(space) */
+  padding-bottom: 30%;
+  /* can give padding top too */
+  float: left;
+  /* the divs come on left of each other
+   instead of one below the other in a straight line */
+  margin: 1.66%;
+  /* IMPORTANT */
+  border-radius: 15%;
+  transition: background 0.6s;
+  /* here we target only the changing of background property */
+  -webkit-transition: background 0.6s;
+  -moz-transition: background 0.6s;
+  /* last 2 lines only for browser friendly  */
+}
+
+#container{
+  max-width: 600px;
+  margin: 40px auto;
+  /* 0 margin on top and bottom and auto on left and right
+  centres the grid(content). useful trick. */
+}
+
+#stripe{
+  height: 40px;
+  background-color: white;
+  text-align: center;
+  color: black
+}
+
+.selected{
+  color: white;
+  background: steelblue;
+}
+
+button{
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  height: 100%;
+  font-weight: 700;
+  color: steelblue;
+  letter-spacing: 0.5px;
+  font-size: inherit;
+  /* IMPORTANT */
+  transition: all 0.3s;
+  /* therefore any time the property changes on any button (colour or anything) */
+  /* ALL APPLIES IT TO EVERY PROPERTY AND THE NEXT TELLS HOW LONG TO TAKE FOR THE ANIMATION */
+  -webkit-transition: background 0.6s;
+  -moz-transition: background 0.6s;
+  outline: none;
+  /* in case the button has an outline maybe due to the browser  */
+}
+
+button:hover{
+  color: white;
+  background: steelblue;
+}

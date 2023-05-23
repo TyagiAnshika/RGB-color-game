@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>COLOR GAME</title>
+    <link rel="stylesheet" href="colorgame.css">
+  </head>
+  <body>
+    <h1>the greatest <span ID="colorDisplay">RGB</span> color game</h1>
+    <div id="stripe">
+      <button id="reset">NEW COLORS</button>
+      <span id="message"></span>
+      <button id="easyBtn">easy</button>
+      <button id="hardBtn" class="selected">hard</button>
+    </div>
+    <div id="container">
+      <!-- grouping squares together later make them responsive -->
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+  <!-- each square takes 30% of the container which goes around only the squares
+  margin of 1.66% on all sides in between which adds to 100% -->
+    </div>
+    <script type="text/javascript" src="colorgame.js"></script>
+  </body>
+</html>
